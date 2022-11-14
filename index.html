@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+<script>
+var isNS = (navigator.appName == "Netscape") ? 1 : 0;
+if(navigator.appName == "Netscape") document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
+function mischandler(){
+return false;
+}
+function mousehandler(e){
+var myevent = (isNS) ? e : event;
+var eventbutton = (isNS) ? myevent.which : myevent.button;
+if((eventbutton==2)||(eventbutton==3)) return false;
+}
+document.oncontextmenu = mischandler;
+document.onmousedown = mousehandler;
+document.onmouseup = mousehandler;
+</script>
+    
+    <title>Star Sports 1</title>
+    <meta charset="utf-8"/>
+ <style>
+        body {background-color:#FFFFFF;}
+
+  h1{
+    text-align: center;
+    margin: 0px;
+    font-family: 'Merriweather Sans', sans-serif;
+    color:aliceblue;
+    margin-top: 0px;
+    max-width: full;
+  }
+ </style>
+</head>
+<body>
+   <img src="https://www.smartads.in/resources/assets/uploads/product_group/Television/Star-Sports-1-HD-Logo.jpg" alt="" style="width:150px;height:90px; top:-5px; ">
+    <h1 style="background-color:#000000" >Star Sports 1 HD</h1>  
+<p><iframe style="background-color:black" allowfullscreen="" frameborder="0" height="600px" id="video" marginheight="0" marginwidth="0" replaced="true" sandbox="allow-forms allow-pointer-lock allow-same-origin allow-scripts allow-top-navigation" scrolling="no" autoplay="true" src="//stream.crichd.vip/update/star.php" width="100%"></iframe></p>
+
+<iframe src="http://175.41.46.16:8081/hls/2.m3u" allowfullscreen="" frameborder="0" height="600px" id="video" marginheight="0" marginwidth="0" replaced="true" scrolling="no" autoplay="true" width="100%"></iframe>
+
+</body>
+</html>
